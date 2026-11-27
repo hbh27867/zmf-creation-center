@@ -1,0 +1,14 @@
+llm_config.json
+manifest.json
+manifest.backup.json
+adopted_files.json
+create_log.json
+server*.log
+server*.err
+*.bak
+*.bak_*
+*.pre_*
+__pycache__/
+*.pyc
+.thumb_cache/
+night_state/

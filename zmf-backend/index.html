@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZMF 壁纸图库 · 输出管理</title>
+<style>
+  :root {
+    --bg: #0e1118; --panel: #171c26; --panel2: #1e2532; --line: #2a3242;
+    --tx: #dfe5ef; --tx2: #8b94a7; --acc: #e8b14e; --acc2: #6ea8ff;
+    --moss: #7cc4a1; --krea: #e89a6e; --red: #e26d5a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--tx); font-family: "Microsoft YaHei", system-ui, sans-serif; }
+  header {
+    position: sticky; top: 0; z-index: 20; background: rgba(14,17,24,.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line); padding: 14px 22px 10px;
+  }
+  .h1row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  h1 { font-size: 20px; letter-spacing: 1px; }
+  h1 small { color: var(--tx2); font-size: 12px; font-weight: normal; }
+  .stats { color: var(--tx2); font-size: 13px; }
+  .stats b { color: var(--acc); font-weight: 600; }
+  .toolbar { display: flex; gap: 10px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+  #search {
+    background: var(--panel); border: 1px solid var(--line); color: var(--tx);
+    padding: 7px 12px; border-radius: 8px; width: 260px; font-size: 13px; outline: none;
+  }
+  #search:focus { border-color: var(--acc2); }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; max-width: 900px; }
+  .chip {
+    background: var(--panel); border: 1px solid var(--line); color: var(--tx2);
+    padding: 4px 10px; border-radius: 999px; font-size: 12px; cursor: pointer; user-select: none;
+  }
+  .chip:hover { border-color: var(--acc2); color: var(--tx); }
+  .chip.on { background: var(--acc2); border-color: var(--acc2); color: #0b1220; font-weight: 600; }
+  button.act {
+    background: var(--panel); border: 1px solid var(--line); color: var(--tx);
+    padding: 7px 14px; border-radius: 8px; font-size: 13px; cursor: pointer;
+  }
+  button.act:hover { border-color: var(--acc); color: var(--acc); }
+  button.act:disabled { opacity: .5; cursor: wait; }
+  #hint { color: var(--tx2); font-size: 12px; }
+  main { padding: 18px 22px 60px; }
+  .batchhead { margin: 26px 0 12px; display: flex; align-items: center; gap: 12px; }
+  .batchhead .no {
+    background: var(--acc); color: #20180a; font-weight: 700; border-radius: 8px;
+    padding: 3px 10px; font-size: 14px;
+  }
+  .batchhead .t { font-size: 16px; font-weight: 600; }
+  .batchhead .c { color: var(--tx2); font-size: 12px; }
+  .batchhead .line { flex: 1; height: 1px; background: var(--line); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .cardhead { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .cardhead .name { font-weight: 600; font-size: 14px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cardhead .ref { width: 34px; height: 22px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); cursor: pointer; }
+  .cardhead .bn { color: var(--tx2); font-size: 11px; }
+  .imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); position: relative; }
+  .imgbox { position: relative; background: #0b0e14; min-height: 120px; }
+  .imgbox img { width: 100%; height: 100%; display: block; cursor: zoom-in; aspect-ratio: 16/9.1; object-fit: cover; }
+  .imgbox .tag {
+    position: absolute; left: 8px; top: 8px; font-size: 11px; padding: 2px 8px; border-radius: 999px;
+    backdrop-filter: blur(4px);
+  }
+  .tag.moss { background: rgba(124,196,161,.85); color: #0b1a14; font-weight: 600; }
+  .tag.krea { background: rgba(232,154,110,.85); color: #20140b; font-weight: 600; }
+  .imgbox .del {
+    position: absolute; right: 8px; top: 8px; background: rgba(20,12,12,.72); color: #ffb4a6;
+    border: 1px solid rgba(226,109,90,.55); border-radius: 6px; font-size: 11px;
+    padding: 3px 8px; cursor: pointer; opacity: 0; transition: opacity .15s;
+  }
+  .imgbox:hover .del { opacity: 1; }
+  .imgbox .del:hover { background: var(--red); color: #fff; }
+  .imgbox .pending {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    color: var(--tx2); font-size: 13px; letter-spacing: 2px; background: repeating-linear-gradient(45deg,#12161f,#12161f 12px,#161b26 12px,#161b26 24px);
+  }
+  .promptbox { padding: 10px 14px; border-top: 1px solid var(--line); }
+  .prow { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .promptbox summary { cursor: pointer; color: var(--tx2); font-size: 12px; user-select: none; flex: 1; list-style: none; }
+  .promptbox summary::-webkit-details-marker { display: none; }
+  .promptbox summary::before { content: '▸ '; }
+  .promptbox[open] summary::before { content: '▾ '; }
+  .promptbox summary:hover { color: var(--acc); }
+  .copybtn {
+    background: var(--panel2); border: 1px solid var(--line); color: var(--tx2);
+    padding: 4px 10px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap;
+  }
+  .copybtn:hover { border-color: var(--acc2); color: var(--acc2); }
+  .copybtn.ok { border-color: var(--moss); color: var(--moss); }
+  .promptbox .ptext { margin-top: 8px; font-size: 12.5px; line-height: 1.75; color: var(--tx); white-space: pre-wrap; }
+  .meta { padding: 6px 14px 12px; color: var(--tx2); font-size: 11px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .lightbox {
+    position: fixed; inset: 0; background: rgba(5,7,11,.94); z-index: 50;
+    display: none; align-items: center; justify-content: center; flex-direction: column; gap: 12px; padding: 30px;
+  }
+  .lightbox.on { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 74vh; border-radius: 8px; border: 1px solid var(--line); }
+  .lightbox .lbmeta { color: var(--tx2); font-size: 12px; text-align: center; max-width: 900px; line-height: 1.8; max-height: 18vh; overflow-y: auto; }
+  .lightbox .lbbtns { display: flex; gap: 10px; }
+  .lbnav {
+    position: fixed; top: 50%; transform: translateY(-50%);
+    background: rgba(23,28,38,.7); border: 1px solid var(--line); color: var(--tx);
+    font-size: 44px; line-height: 1; width: 56px; height: 84px; border-radius: 10px;
+    cursor: pointer; user-select: none; z-index: 51;
+  }
+  .lbnav:hover { border-color: var(--acc); color: var(--acc); }
+  #lbprev { left: 18px; }
+  #lbnext { right: 18px; }
+  .lbhint { color: var(--tx2); font-size: 11px; }
+  .empty { color: var(--tx2); padding: 40px; text-align: center; }
+  footer { color: var(--tx2); font-size: 12px; padding: 8px 22px 24px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="h1row">
+    <h1>ZMF 壁纸图库 <small>【在下鱼酥】Moss+Krea2 双采输出管理</small></h1>
+    <div class="stats" id="stats">加载中…</div>
+  </div>
+  <div class="toolbar">
+    <input id="search" placeholder="搜索提示词 / 场景名 / 文件名…">
+    <div class="chips" id="chips"></div>
+    <button class="act" id="refreshBtn">↻ 刷新清单</button>
+    <button class="act" id="bvBtn" title="把同一 BV 的场景集中在一起展示，BV 内按段号排序">▦ 按 BV 分组</button>
+    <span id="hint"></span>
+  </div>
+</header>
+<main id="main"></main>
+<footer>删除会把文件移入 output\_trash\（按时间分夹），误删可去那里找回。双采：每条提示词同时产出 MODE01（MOSS 直出）与 MODE02（Krea2 精修）两张。</footer>
+
+<div class="lightbox" id="lb">
+  <button class="lbnav" id="lbprev" title="上一张 (←)">‹</button>
+  <img id="lbimg">
+  <button class="lbnav" id="lbnext" title="下一张 (→)">›</button>
+  <div class="lbmeta" id="lbmeta"></div>
+  <div class="lbbtns">
+    <button class="act" id="lbcopy">复制提示词</button>
+    <button class="act" id="lbdel">删除这张</button>
+    <button class="act" id="lbclose">关闭 (Esc)</button>
+  </div>
+  <div class="lbhint">滚轮 / ← → 方向键 翻页 · Esc 关闭</div>
+</div>
+
+<script>
+let MANIFEST = null;
+let FILTER_BATCH = 0;   // 0 = 全部
+let KEYWORD = '';
+let GROUP_BV = false;   // true = 按 BV 分组排序
+
+function bvOf(p) {
+  const m = /^stills\/(BV[A-Za-z0-9]+)\//.exec(p.ref || '');
+  return m ? m[1] : '';
+}
+function sceneNo(p) {
+  const m = /\/s(\d+)/.exec(p.ref || '');
+  return m ? parseInt(m[1], 10) : 0;
+}
+
+async function load() {
+  const r = await fetch('/manifest.json');
+  MANIFEST = await r.json();
+  renderChips();
+  render();
+}
+
+function renderChips() {
+  const box = document.getElementById('chips');
+  box.innerHTML = '';
+  const mk = (label, no) => {
+    const c = document.createElement('span');
+    c.className = 'chip' + (FILTER_BATCH === no ? ' on' : '');
+    c.textContent = label;
+    c.onclick = () => { FILTER_BATCH = no; renderChips(); render(); };
+    box.appendChild(c);
+  };
+  mk('全部', 0);
+  for (const b of MANIFEST.batches) mk('批次' + b.no, b.no);
+}
+
+function match(p) {
+  if (FILTER_BATCH && p._batch !== FILTER_BATCH) return false;
+  if (!KEYWORD) return true;
+  const k = KEYWORD.toLowerCase();
+  return (p.name || '').toLowerCase().includes(k)
+      || (p.prompt || '').toLowerCase().includes(k)
+      || (p.images || []).some(i => (i.file || '').toLowerCase().includes(k));
+}
+
+function fmtSize(b) { return (b / 1024 / 1024).toFixed(1) + ' MB'; }
+
+function render() {
+  const main = document.getElementById('main');
+  const stats = document.getElementById('stats');
+  stats.innerHTML = `共 <b>${MANIFEST.totalPrompts}</b> 条提示词 · <b>${MANIFEST.totalImages}</b> 张图 · 待生成 <b>${MANIFEST.pending || 0}</b> 条 · 清单时间 ${MANIFEST.generated}`;
+  main.innerHTML = '';
+
+  // 给 prompt 打上批次号
+  const all = [];
+  for (const b of MANIFEST.batches)
+    for (const p of b.prompts) { p._batch = b.no; p._single = !!b.single; if (match(p)) all.push(p); }
+
+  let shown = 0;
+  const section = (label, title, plist) => {
+    shown += plist.length;
+    const bh = document.createElement('div');
+    bh.className = 'batchhead';
+    bh.innerHTML = `<span class="no">${label}</span><span class="t">${title}</span><span class="c">${plist.length} 条 · ${plist.reduce((s,p)=>s+p.images.length,0)} 张</span><div class="line"></div>`;
+    main.appendChild(bh);
+    const grid = document.createElement('div');
+    grid.className = 'grid';
+    for (const p of plist) grid.appendChild(card(p));
+    main.appendChild(grid);
+  };
+
+  if (GROUP_BV) {
+    // 按 BV 分组：同 BV 集中展示，BV 内按段号排序
+    const groups = new Map();
+    for (const p of all) {
+      const bv = bvOf(p) || '（非图鉴参考）';
+      if (!groups.has(bv)) groups.set(bv, []);
+      groups.get(bv).push(p);
+    }
+    const keys = [...groups.keys()].sort((a, b) => {
+      if (a === '（非图鉴参考）') return 1;
+      if (b === '（非图鉴参考）') return -1;
+      return a.localeCompare(b);
+    });
+    for (const bv of keys) {
+      const plist = groups.get(bv).sort((x, y) => sceneNo(x) - sceneNo(y) || x._batch - y._batch);
+      const batches = [...new Set(plist.map(p => p._batch))].sort((a, b) => a - b);
+      section(bv, '涉及批次 ' + batches.join('、'), plist);
+    }
+  } else {
+    for (const b of MANIFEST.batches) {
+      const plist = all.filter(p => p._batch === b.no);
+      if (!plist.length) continue;
+      section('批次 ' + b.no, b.title, plist);
+    }
+  }
+  if (!shown) main.innerHTML = '<div class="empty">没有匹配的提示词</div>';
+}
+
+function card(p) {
+  const c = document.createElement('div');
+  c.className = 'card';
+  const refImg = p.ref ? `<img class="ref" src="/ref?path=${encodeURIComponent(p.ref)}" title="参考元素/源静帧" onclick="window.open('/ref?path=${encodeURIComponent(p.ref)}','_blank')">` : '';
+  c.innerHTML = `<div class="cardhead"><span class="name">#${p.idx} ${p.name || '未命名'}</span>${refImg}<span class="bn">批次${p._batch}</span></div>`;
+
+  const imgs = document.createElement('div');
+  imgs.className = 'imgs';
+  const order = [['MOSS直出', 'moss'], ['Krea2精修', 'krea']];
+  for (const [label, key] of order) {
+    const list = (p.images || []).filter(x => x.mode === label);
+    if (list.length) {
+      list.forEach((im, k) => {
+        const box = document.createElement('div');
+        box.className = 'imgbox';
+        const tagTxt = list.length > 1 ? `${label}·${k + 1}` : label;
+        box.innerHTML = `<span class="tag ${key}">${tagTxt}</span><button class="del">删除</button>
+        <img loading="lazy" src="/img/${encodeURIComponent(im.file)}" data-file="${im.file}" data-label="${label}" data-name="${p.name}" data-batch="${p._batch}" title="${im.mtime || ''}">`;
+        box.querySelector('img').onclick = e => openLB(e.target);
+        box.querySelector('.del').onclick = () => delOne(im.file, p);
+        imgs.appendChild(box);
+      });
+    } else if (p.pending) {
+      const box = document.createElement('div');
+      box.className = 'imgbox';
+      box.innerHTML = `<span class="tag ${key}">${label}</span><div class="pending">待生成 · 队列中</div>`;
+      imgs.appendChild(box);
+    } else if (!p._single) {
+      const box = document.createElement('div');
+      box.className = 'imgbox';
+      box.innerHTML = `<span class="tag ${key}">${label}</span><div class="pending">未找到文件</div>`;
+      imgs.appendChild(box);
+    }
+  }
+  c.appendChild(imgs);
+
+  const pb = document.createElement('details');
+  pb.className = 'promptbox';
+  pb.innerHTML = `<div class="prow"><summary>提示词（${(p.prompt || '').length} 字）</summary><button class="copybtn">复制提示词</button></div><div class="ptext"></div>`;
+  pb.querySelector('.ptext').textContent = p.prompt || '';
+  pb.querySelector('.copybtn').onclick = e => {
+    e.stopPropagation();
+    copyText(p.prompt || '', e.target);
+  };
+  c.appendChild(pb);
+
+  const meta = document.createElement('div');
+  meta.className = 'meta';
+  const times = (p.images || []).filter(i => i.mtime).map(i => i.mtime);
+  const tstr = times.length ? [...new Set(times)].join(' / ') : '';
+  meta.innerHTML = `<span>PID ${p.pid.slice(0, 8)}…</span>` +
+    (p.images || []).map(i => `<span>${i.mode}: ${fmtSize(i.size)}</span>`).join('') +
+    (tstr ? `<span>🕐 ${tstr}</span>` : '');
+  c.appendChild(meta);
+  return c;
+}
+
+let LB = null;
+function copyText(text, btn) {
+  const done = b => {
+    if (!btn) return;
+    const old = b.textContent;
+    b.textContent = b.classList.contains('act') ? '✓ 已复制' : '✓ 已复制';
+    b.classList.add('ok');
+    setTimeout(() => { b.textContent = old; b.classList.remove('ok'); }, 1200);
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(() => done(btn)).catch(() => fallbackCopy(text, btn));
+  } else {
+    fallbackCopy(text, btn);
+  }
+}
+function fallbackCopy(text, btn) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); done2(btn); } catch (e) {}
+  document.body.removeChild(ta);
+  function done2(b) {
+    if (!btn) return;
+    const old = b.textContent;
+    b.textContent = '✓ 已复制';
+    b.classList.add('ok');
+    setTimeout(() => { b.textContent = old; b.classList.remove('ok'); }, 1200);
+  }
+}
+// ---- 灯箱：全局浏览序列 + 滚轮/方向键翻页 ----
+let LB_SEQ = [];   // 当前可见的图片序列 [{file,label,name,batch,src,prompt}]
+let LB_POS = -1;   // 当前序列位置
+
+function buildSeq() {
+  // 按当前 DOM 顺序收集所有可见卡片里的图片（与页面浏览顺序一致）
+  LB_SEQ = [...document.querySelectorAll('.imgbox img[data-file]')].map(img => {
+    const p = findPromptByFile(img.dataset.file);
+    return {
+      file: img.dataset.file, label: img.dataset.label,
+      name: img.dataset.name, batch: img.dataset.batch,
+      src: img.src, prompt: p ? p.prompt : '', idx: p ? p.idx : null,
+      mtime: p ? ((p.images || []).find(i => i.file === img.dataset.file) || {}).mtime || '' : '',
+    };
+  });
+}
+
+function showLBAt(pos) {
+  if (!LB_SEQ.length) return;
+  // 循环浏览
+  LB_POS = (pos + LB_SEQ.length) % LB_SEQ.length;
+  const item = LB_SEQ[LB_POS];
+  document.getElementById('lbimg').src = item.src;
+  const p = findPromptByFile(item.file);
+  document.getElementById('lbmeta').innerHTML =
+    `<b>${item.label}</b> · 批次${item.batch} · #${item.idx ?? '?'} ${item.name}` +
+    `　<span style="color:var(--acc)">第 ${LB_POS + 1} / ${LB_SEQ.length} 张</span>` +
+    (item.mtime ? `　🕐 ${item.mtime}` : '') + `<br>` +
+    `${item.file}<br>` + `<span style="white-space:pre-wrap">${escapeHtml(item.prompt)}</span>`;
+  document.getElementById('lbcopy').onclick = () => copyText(item.prompt || '', document.getElementById('lbcopy'));
+  LB = { file: item.file };
+}
+
+function lbStep(delta) { showLBAt(LB_POS + delta); }
+
+function openLB(img) {
+  buildSeq();
+  const i = LB_SEQ.findIndex(x => x.file === img.dataset.file);
+  showLBAt(i >= 0 ? i : 0);
+  document.getElementById('lb').classList.add('on');
+}
+function findPromptByFile(f) {
+  for (const b of MANIFEST.batches) for (const p of b.prompts)
+    if ((p.images || []).some(i => i.file === f)) return { ...p, _batch: b.no };
+  return null;
+}
+function escapeHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function closeLB() { document.getElementById('lb').classList.remove('on'); }
+document.getElementById('lbclose').onclick = closeLB;
+document.getElementById('lb').onclick = e => { if (e.target.id === 'lb') closeLB(); };
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lb').classList.contains('on')) return;
+  if (e.key === 'Escape') closeLB();
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D' || e.key === 'PageDown') { e.preventDefault(); lbStep(1); }
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A' || e.key === 'PageUp') { e.preventDefault(); lbStep(-1); }
+});
+document.getElementById('lb').addEventListener('wheel', e => {
+  e.preventDefault();
+  lbStep(e.deltaY > 0 ? 1 : -1);
+}, { passive: false });
+
+async function delOne(file, p) {
+  if (!confirm('确定删除这张图？\n' + file + '\n（会移入 output\\_trash\\，可找回）')) return;
+  const r = await fetch('/api/delete', { method: 'POST', body: JSON.stringify({ file }) });
+  const j = await r.json();
+  document.getElementById('hint').textContent = j.ok ? '已删除：' + file : '删除失败：' + j.msg;
+  await load();
+}
+document.getElementById('lbdel').onclick = async () => {
+  if (!LB) return;
+  if (!confirm('确定删除这张图？（移入 _trash 可找回）')) return;
+  const r = await fetch('/api/delete', { method: 'POST', body: JSON.stringify({ file: LB.file }) });
+  const j = await r.json();
+  closeLB();
+  document.getElementById('hint').textContent = j.ok ? '已删除：' + LB.file : '删除失败：' + j.msg;
+  await load();
+};
+document.getElementById('lbprev').onclick = () => lbStep(-1);
+document.getElementById('lbnext').onclick = () => lbStep(1);
+
+document.getElementById('search').oninput = e => { KEYWORD = e.target.value.trim(); render(); };
+const bvBtn = document.getElementById('bvBtn');
+function syncBvBtn() {
+  bvBtn.textContent = GROUP_BV ? '▦ 按 BV 分组：开' : '▦ 按 BV 分组';
+  bvBtn.style.borderColor = GROUP_BV ? 'var(--acc)' : '';
+  bvBtn.style.color = GROUP_BV ? 'var(--acc)' : '';
+}
+try { GROUP_BV = localStorage.getItem('zmf_group_bv') === '1'; } catch (e) {}
+syncBvBtn();
+bvBtn.onclick = () => {
+  GROUP_BV = !GROUP_BV;
+  try { localStorage.setItem('zmf_group_bv', GROUP_BV ? '1' : '0'); } catch (e) {}
+  syncBvBtn();
+  if (MANIFEST) render();
+};
+document.getElementById('refreshBtn').onclick = async e => {
+  e.target.disabled = true; e.target.textContent = '刷新中…';
+  try {
+    const r = await fetch('/api/refresh', { method: 'POST' });
+    const j = await r.json();
+    document.getElementById('hint').textContent = `已刷新：${j.totalImages} 张在库，${j.pending} 条待生成`;
+  } catch (err) { document.getElementById('hint').textContent = '刷新失败：' + err; }
+  e.target.disabled = false; e.target.textContent = '↻ 刷新清单';
+  await load();
+};
+
+load();
+</script>
+</body>
+</html>

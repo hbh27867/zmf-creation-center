@@ -1,0 +1,55 @@
+{
+  "id": "./zmf.html",
+  "name": "ZMF 创作中心",
+  "short_name": "ZMF",
+  "description": "国风仙侠壁纸工坊：提示词拼装、创作台、最近输出与输出图库。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./zmf.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#16120d",
+  "background_color": "#16120d",
+  "categories": ["productivity", "design", "entertainment"],
+  "icons": [
+    {
+      "src": "zmf-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "zmf-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "zmf-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "创作台",
+      "short_name": "创作台",
+      "url": "./zmf.html?tab=workshop",
+      "icons": [{"src": "zmf-icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "最近输出",
+      "short_name": "最近输出",
+      "url": "./zmf.html?tab=recent",
+      "icons": [{"src": "zmf-icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "输出图库",
+      "short_name": "输出图库",
+      "url": "./zmf.html?tab=output",
+      "icons": [{"src": "zmf-icon-192.png", "sizes": "192x192"}]
+    }
+  ]
+}
