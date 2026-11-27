@@ -1,0 +1,1666 @@
+{
+  "source": "zmf_mj45_v2_daily_20261127/catalog.json",
+  "record_count": 440,
+  "unique_prompt_sha256": 440,
+  "unique_normalized_prompt_text": 440,
+  "exact_normalized_duplicate_groups": [],
+  "unique_theme_zh": 99,
+  "unique_source_assets": 33,
+  "theme_reuse": {
+    "groups_with_multiple_prompts": 99,
+    "max_prompts_per_theme": 5,
+    "top_groups": [
+      {
+        "theme_zh": "渔童半坐在石岸看水鸟理羽，远栈边留一只小鸟",
+        "prompt_count": 5,
+        "tags": [
+          "T001",
+          "T002",
+          "T003",
+          "T004",
+          "T005"
+        ]
+      },
+      {
+        "theme_zh": "空药铺的屉墙前留一张斜案，两端搁着不同大小的陶瓶",
+        "prompt_count": 5,
+        "tags": [
+          "T006",
+          "T007",
+          "T008",
+          "T009",
+          "T010"
+        ]
+      },
+      {
+        "theme_zh": "俯视一名旅人抬眼系紧衣结，浅长袖压住画面两角",
+        "prompt_count": 5,
+        "tags": [
+          "T011",
+          "T012",
+          "T013",
+          "T014",
+          "T015"
+        ]
+      },
+      {
+        "theme_zh": "旅人在高屋檐下盘膝读信，左半画幅保留无人的云海",
+        "prompt_count": 5,
+        "tags": [
+          "T020",
+          "T021",
+          "T022",
+          "T023",
+          "T024"
+        ]
+      },
+      {
+        "theme_zh": "画师倚在半浸水的扁石上，头发散入浅波",
+        "prompt_count": 5,
+        "tags": [
+          "T025",
+          "T026",
+          "T027",
+          "T028",
+          "T029"
+        ]
+      },
+      {
+        "theme_zh": "一队驮包旅人离开峡谷阴面，最远的人被雾化掉半身",
+        "prompt_count": 5,
+        "tags": [
+          "T034",
+          "T035",
+          "T036",
+          "T037",
+          "T038"
+        ]
+      },
+      {
+        "theme_zh": "楼外一簇卷瓣形亮纹浮起，卷线掠过空石台",
+        "prompt_count": 5,
+        "tags": [
+          "T039",
+          "T040",
+          "T041",
+          "T042",
+          "T043"
+        ]
+      },
+      {
+        "theme_zh": "清晨空平台望对岸横跨峡谷的连廊",
+        "prompt_count": 5,
+        "tags": [
+          "T044",
+          "T045",
+          "T046",
+          "T047",
+          "T048"
+        ]
+      },
+      {
+        "theme_zh": "一只灰蓝巨蛾从灯市上方展开双翼，一名商贩立在右下摊边",
+        "prompt_count": 5,
+        "tags": [
+          "T049",
+          "T050",
+          "T051",
+          "T052",
+          "T053"
+        ]
+      },
+      {
+        "theme_zh": "海龟隆背冒出风浪，天边只露两座小礁塔",
+        "prompt_count": 5,
+        "tags": [
+          "T058",
+          "T059",
+          "T060",
+          "T061",
+          "T062"
+        ]
+      },
+      {
+        "theme_zh": "绳上戏偶的影子落在垂幕上，底沿留出空石台",
+        "prompt_count": 5,
+        "tags": [
+          "T063",
+          "T064",
+          "T065",
+          "T066",
+          "T067"
+        ]
+      },
+      {
+        "theme_zh": "装裱匠把染过的纸摊到木案边",
+        "prompt_count": 5,
+        "tags": [
+          "T076",
+          "T077",
+          "T078",
+          "T079",
+          "T080"
+        ]
+      },
+      {
+        "theme_zh": "一只冷蓝鳞兽探向空谷，远侧崖庐小得只看见屋轮廓",
+        "prompt_count": 5,
+        "tags": [
+          "T081",
+          "T082",
+          "T083",
+          "T084",
+          "T085"
+        ]
+      },
+      {
+        "theme_zh": "雨后无人庭院，树根间留下几块湿石",
+        "prompt_count": 5,
+        "tags": [
+          "T086",
+          "T087",
+          "T088",
+          "T089",
+          "T090"
+        ]
+      },
+      {
+        "theme_zh": "高处俯看无人河城，银光顺水湾转向，橙灯只在小码头成短倒影",
+        "prompt_count": 5,
+        "tags": [
+          "T095",
+          "T096",
+          "T097",
+          "T098",
+          "T099"
+        ]
+      },
+      {
+        "theme_zh": "深色斗篷旅人在右侧雪岭拾起行囊，远谷无人",
+        "prompt_count": 5,
+        "tags": [
+          "T100",
+          "T101",
+          "T102",
+          "T103",
+          "T104"
+        ]
+      },
+      {
+        "theme_zh": "夜宴结束，一只狸猫伏在近桌席上，远端有人收碗",
+        "prompt_count": 5,
+        "tags": [
+          "T121",
+          "T122",
+          "T123",
+          "T124",
+          "T125"
+        ]
+      },
+      {
+        "theme_zh": "悬钟库无人，木槌斜搁在右侧矮架",
+        "prompt_count": 5,
+        "tags": [
+          "T126",
+          "T127",
+          "T128",
+          "T129",
+          "T130"
+        ]
+      },
+      {
+        "theme_zh": "药商坐在舱窗内看雨中的拱桥",
+        "prompt_count": 5,
+        "tags": [
+          "T135",
+          "T136",
+          "T137",
+          "T138",
+          "T139"
+        ]
+      },
+      {
+        "theme_zh": "浅滩处两岸各有一座熄灯亭，月色落在水湾",
+        "prompt_count": 5,
+        "tags": [
+          "T144",
+          "T145",
+          "T146",
+          "T147",
+          "T148"
+        ]
+      }
+    ]
+  },
+  "source_reuse": {
+    "max_prompts_per_source": 15,
+    "top_groups": [
+      {
+        "source": "BV1B4nV69EcY/s10",
+        "prompt_count": 15,
+        "tags": [
+          "T011",
+          "T012",
+          "T013",
+          "T014",
+          "T015",
+          "T158",
+          "T159",
+          "T160",
+          "T161",
+          "T162",
+          "T310",
+          "T311",
+          "T312",
+          "T313",
+          "T314"
+        ]
+      },
+      {
+        "source": "BV1m4tA6bEbP/s07",
+        "prompt_count": 15,
+        "tags": [
+          "T020",
+          "T021",
+          "T022",
+          "T023",
+          "T024",
+          "T265",
+          "T266",
+          "T267",
+          "T268",
+          "T269",
+          "T315",
+          "T316",
+          "T317",
+          "T318",
+          "T319"
+        ]
+      },
+      {
+        "source": "BVZMFSTATIC0/s16",
+        "prompt_count": 15,
+        "tags": [
+          "T044",
+          "T045",
+          "T046",
+          "T047",
+          "T048",
+          "T182",
+          "T183",
+          "T184",
+          "T185",
+          "T186",
+          "T305",
+          "T306",
+          "T307",
+          "T308",
+          "T309"
+        ]
+      },
+      {
+        "source": "BVZMFSTATIC0/s12",
+        "prompt_count": 15,
+        "tags": [
+          "T063",
+          "T064",
+          "T065",
+          "T066",
+          "T067",
+          "T218",
+          "T219",
+          "T220",
+          "T221",
+          "T222",
+          "T328",
+          "T329",
+          "T330",
+          "T331",
+          "T332"
+        ]
+      },
+      {
+        "source": "BVZMFSTATIC0/s22",
+        "prompt_count": 14,
+        "tags": [
+          "T001",
+          "T002",
+          "T003",
+          "T004",
+          "T005",
+          "T163",
+          "T164",
+          "T165",
+          "T166",
+          "T167",
+          "T345",
+          "T346",
+          "T347",
+          "T348"
+        ]
+      },
+      {
+        "source": "BV16uYb6vECt/s11",
+        "prompt_count": 14,
+        "tags": [
+          "T006",
+          "T007",
+          "T008",
+          "T009",
+          "T010",
+          "T177",
+          "T178",
+          "T179",
+          "T180",
+          "T181",
+          "T353",
+          "T354",
+          "T355",
+          "T356"
+        ]
+      },
+      {
+        "source": "BVZMFSTATIC0/s19",
+        "prompt_count": 14,
+        "tags": [
+          "T025",
+          "T026",
+          "T027",
+          "T028",
+          "T029",
+          "T200",
+          "T201",
+          "T202",
+          "T203",
+          "T204",
+          "T361",
+          "T362",
+          "T363",
+          "T364"
+        ]
+      },
+      {
+        "source": "BV1NxbD68EYE/s07",
+        "prompt_count": 14,
+        "tags": [
+          "T034",
+          "T035",
+          "T036",
+          "T037",
+          "T038",
+          "T228",
+          "T229",
+          "T230",
+          "T231",
+          "T232",
+          "T433",
+          "T434",
+          "T435",
+          "T436"
+        ]
+      },
+      {
+        "source": "BV1RJuc6DEgF/s07",
+        "prompt_count": 14,
+        "tags": [
+          "T039",
+          "T040",
+          "T041",
+          "T042",
+          "T043",
+          "T238",
+          "T239",
+          "T240",
+          "T241",
+          "T242",
+          "T425",
+          "T426",
+          "T427",
+          "T428"
+        ]
+      },
+      {
+        "source": "BV1quYm67E14/s07",
+        "prompt_count": 14,
+        "tags": [
+          "T049",
+          "T050",
+          "T051",
+          "T052",
+          "T053",
+          "T248",
+          "T249",
+          "T250",
+          "T251",
+          "T252",
+          "T337",
+          "T338",
+          "T339",
+          "T340"
+        ]
+      },
+      {
+        "source": "BV12Puz6LEAB/s18",
+        "prompt_count": 14,
+        "tags": [
+          "T058",
+          "T059",
+          "T060",
+          "T061",
+          "T062",
+          "T223",
+          "T224",
+          "T225",
+          "T226",
+          "T227",
+          "T349",
+          "T350",
+          "T351",
+          "T352"
+        ]
+      },
+      {
+        "source": "BV12Puz6LEAB/s06",
+        "prompt_count": 14,
+        "tags": [
+          "T076",
+          "T077",
+          "T078",
+          "T079",
+          "T080",
+          "T287",
+          "T288",
+          "T289",
+          "T290",
+          "T291",
+          "T377",
+          "T378",
+          "T379",
+          "T380"
+        ]
+      },
+      {
+        "source": "BV1NiNQ6MEDq/s04",
+        "prompt_count": 14,
+        "tags": [
+          "T081",
+          "T082",
+          "T083",
+          "T084",
+          "T085",
+          "T195",
+          "T196",
+          "T197",
+          "T198",
+          "T199",
+          "T393",
+          "T394",
+          "T395",
+          "T396"
+        ]
+      },
+      {
+        "source": "BV1NxbD68EYE/s10",
+        "prompt_count": 14,
+        "tags": [
+          "T086",
+          "T087",
+          "T088",
+          "T089",
+          "T090",
+          "T172",
+          "T173",
+          "T174",
+          "T175",
+          "T176",
+          "T373",
+          "T374",
+          "T375",
+          "T376"
+        ]
+      },
+      {
+        "source": "BV126aw6vEG6/s22",
+        "prompt_count": 14,
+        "tags": [
+          "T095",
+          "T096",
+          "T097",
+          "T098",
+          "T099",
+          "T153",
+          "T154",
+          "T155",
+          "T156",
+          "T157",
+          "T417",
+          "T418",
+          "T419",
+          "T420"
+        ]
+      },
+      {
+        "source": "BV1NxbD68EYE/s17",
+        "prompt_count": 14,
+        "tags": [
+          "T100",
+          "T101",
+          "T102",
+          "T103",
+          "T104",
+          "T209",
+          "T210",
+          "T211",
+          "T212",
+          "T213",
+          "T397",
+          "T398",
+          "T399",
+          "T400"
+        ]
+      },
+      {
+        "source": "BV1b9eV6VEqW/s09",
+        "prompt_count": 14,
+        "tags": [
+          "T121",
+          "T122",
+          "T123",
+          "T124",
+          "T125",
+          "T233",
+          "T234",
+          "T235",
+          "T236",
+          "T237",
+          "T381",
+          "T382",
+          "T383",
+          "T384"
+        ]
+      },
+      {
+        "source": "BV1eAg96TEYs/s06",
+        "prompt_count": 14,
+        "tags": [
+          "T126",
+          "T127",
+          "T128",
+          "T129",
+          "T130",
+          "T270",
+          "T271",
+          "T272",
+          "T273",
+          "T274",
+          "T385",
+          "T386",
+          "T387",
+          "T388"
+        ]
+      },
+      {
+        "source": "BV1h4NM6sEcR/s04",
+        "prompt_count": 14,
+        "tags": [
+          "T135",
+          "T136",
+          "T137",
+          "T138",
+          "T139",
+          "T296",
+          "T297",
+          "T298",
+          "T299",
+          "T300",
+          "T409",
+          "T410",
+          "T411",
+          "T412"
+        ]
+      },
+      {
+        "source": "BV1NxbD68EYE/s06",
+        "prompt_count": 14,
+        "tags": [
+          "T144",
+          "T145",
+          "T146",
+          "T147",
+          "T148",
+          "T243",
+          "T244",
+          "T245",
+          "T246",
+          "T247",
+          "T429",
+          "T430",
+          "T431",
+          "T432"
+        ]
+      }
+    ]
+  },
+  "within_theme_character_similarity": {
+    "method": "Python difflib.SequenceMatcher on full prompt text, autojunk=False; character similarity, not semantic identity",
+    "pair_count": 770,
+    "median": 0.83108,
+    "max": 0.883012,
+    "threshold_counts": {
+      "0.95": 0,
+      "0.9": 0,
+      "0.85": 313,
+      "0.8": 619,
+      "0.75": 759
+    },
+    "top_100_pairs": [
+      {
+        "theme_zh": "巨型彩翼掠过窄街，两道悬灯在翼面两边露出，右侧看灯人抬头",
+        "left_tag": "T337",
+        "right_tag": "T340",
+        "left_key": "ZR4-135-T02-V1",
+        "right_key": "ZR4-135-T02-V4",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.883012
+      },
+      {
+        "theme_zh": "一只灰蓝巨蛾从灯市上方展开双翼，一名商贩立在右下摊边",
+        "left_tag": "T049",
+        "right_tag": "T052",
+        "left_key": "ZR4-135-T01-V1",
+        "right_key": "ZR4-135-T01-V4",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.882574
+      },
+      {
+        "theme_zh": "夜廊尽头，云中白色异兽掠过远台",
+        "left_tag": "T279",
+        "right_tag": "T282",
+        "left_key": "ZR2-J03-T01-V1",
+        "right_key": "ZR2-J03-T01-V4",
+        "left_source": "BV1WStR6vEca/s08",
+        "right_source": "BV1WStR6vEca/s08",
+        "character_similarity": 0.882145
+      },
+      {
+        "theme_zh": "近窗灯后的夜廊透出一片亮蓝雨幕，廊下无人",
+        "left_tag": "T365",
+        "right_tag": "T368",
+        "left_key": "ZR2-J03-T02-V1",
+        "right_key": "ZR2-J03-T02-V4",
+        "left_source": "BV1WStR6vEca/s08",
+        "right_source": "BV1WStR6vEca/s08",
+        "character_similarity": 0.881531
+      },
+      {
+        "theme_zh": "夜市闭摊后，一只宽翼夜蛾挡住半排灯串，守摊人半身留在右下角",
+        "left_tag": "T248",
+        "right_tag": "T251",
+        "left_key": "ZR4-135-T03-V1",
+        "right_key": "ZR4-135-T03-V4",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.880801
+      },
+      {
+        "theme_zh": "一名守夜人立在暗柱旁，望向廊外泛蓝的高云",
+        "left_tag": "T105",
+        "right_tag": "T108",
+        "left_key": "ZR2-J03-T03-V1",
+        "right_key": "ZR2-J03-T03-V4",
+        "left_source": "BV1WStR6vEca/s08",
+        "right_source": "BV1WStR6vEca/s08",
+        "character_similarity": 0.880501
+      },
+      {
+        "theme_zh": "俯视织工坐在深色毡面上，双手把一段线合在胸前",
+        "left_tag": "T310",
+        "right_tag": "T313",
+        "left_key": "ZR4-145-T01-V1",
+        "right_key": "ZR4-145-T01-V4",
+        "left_source": "BV1B4nV69EcY/s10",
+        "right_source": "BV1B4nV69EcY/s10",
+        "character_similarity": 0.880241
+      },
+      {
+        "theme_zh": "墨衣向导立在雪坡右侧，朝左侧山谷望去",
+        "left_tag": "T397",
+        "right_tag": "T400",
+        "left_key": "ZR4-063-T01-V1",
+        "right_key": "ZR4-063-T01-V4",
+        "left_source": "BV1NxbD68EYE/s17",
+        "right_source": "BV1NxbD68EYE/s17",
+        "character_similarity": 0.879952
+      },
+      {
+        "theme_zh": "俯视一名旅人抬眼系紧衣结，浅长袖压住画面两角",
+        "left_tag": "T011",
+        "right_tag": "T014",
+        "left_key": "ZR4-145-T02-V1",
+        "right_key": "ZR4-145-T02-V4",
+        "left_source": "BV1B4nV69EcY/s10",
+        "right_source": "BV1B4nV69EcY/s10",
+        "character_similarity": 0.879098
+      },
+      {
+        "theme_zh": "舞者停在布环中央，手边白绢和外圈朱绛分层",
+        "left_tag": "T140",
+        "right_tag": "T143",
+        "left_key": "ZR2-J06-T03-V1",
+        "right_key": "ZR2-J06-T03-V4",
+        "left_source": "BV1WStR6vEca/s00",
+        "right_source": "BV1WStR6vEca/s00",
+        "character_similarity": 0.879086
+      },
+      {
+        "theme_zh": "黑袍测绘者停在雪崖边，坡底仅留几枝红褐灌木",
+        "left_tag": "T209",
+        "right_tag": "T212",
+        "left_key": "ZR4-063-T03-V1",
+        "right_key": "ZR4-063-T03-V4",
+        "left_source": "BV1NxbD68EYE/s17",
+        "right_source": "BV1NxbD68EYE/s17",
+        "character_similarity": 0.879008
+      },
+      {
+        "theme_zh": "云岸楼台之外，一位归客沿悬栏逆风而行",
+        "left_tag": "T401",
+        "right_tag": "T404",
+        "left_key": "ZR2-J02-T01-V1",
+        "right_key": "ZR2-J02-T01-V4",
+        "left_source": "BV1RJuc6DEgF/s00",
+        "right_source": "BV1RJuc6DEgF/s00",
+        "character_similarity": 0.878794
+      },
+      {
+        "theme_zh": "深色斗篷旅人在右侧雪岭拾起行囊，远谷无人",
+        "left_tag": "T100",
+        "right_tag": "T103",
+        "left_key": "ZR4-063-T02-V1",
+        "right_key": "ZR4-063-T02-V4",
+        "left_source": "BV1NxbD68EYE/s17",
+        "right_source": "BV1NxbD68EYE/s17",
+        "character_similarity": 0.878776
+      },
+      {
+        "theme_zh": "空台的环形木架上悬有宽绢，近绢遮住部分下缘",
+        "left_tag": "T333",
+        "right_tag": "T336",
+        "left_key": "ZR2-J06-T02-V1",
+        "right_key": "ZR2-J06-T02-V4",
+        "left_source": "BV1WStR6vEca/s00",
+        "right_source": "BV1WStR6vEca/s00",
+        "character_similarity": 0.878527
+      },
+      {
+        "theme_zh": "一座高阁伸出云陆，薄绸越过檐角，短桥上无人",
+        "left_tag": "T253",
+        "right_tag": "T256",
+        "left_key": "ZR2-J02-T02-V1",
+        "right_key": "ZR2-J02-T02-V4",
+        "left_source": "BV1RJuc6DEgF/s00",
+        "right_source": "BV1RJuc6DEgF/s00",
+        "character_similarity": 0.878426
+      },
+      {
+        "theme_zh": "云台中央，一人伸手稳住绕身的长绢",
+        "left_tag": "T168",
+        "right_tag": "T171",
+        "left_key": "ZR2-J06-T01-V1",
+        "right_key": "ZR2-J06-T01-V4",
+        "left_source": "BV1WStR6vEca/s00",
+        "right_source": "BV1WStR6vEca/s00",
+        "character_similarity": 0.878078
+      },
+      {
+        "theme_zh": "清晨空平台望对岸横跨峡谷的连廊",
+        "left_tag": "T044",
+        "right_tag": "T047",
+        "left_key": "ZR3-A10-T01-V1",
+        "right_key": "ZR3-A10-T01-V4",
+        "left_source": "BVZMFSTATIC0/s16",
+        "right_source": "BVZMFSTATIC0/s16",
+        "character_similarity": 0.877609
+      },
+      {
+        "theme_zh": "小工匠停在观瀑台边，远处水从两侧岩台跌落",
+        "left_tag": "T182",
+        "right_tag": "T185",
+        "left_key": "ZR3-A10-T02-V1",
+        "right_key": "ZR3-A10-T02-V4",
+        "left_source": "BVZMFSTATIC0/s16",
+        "right_source": "BVZMFSTATIC0/s16",
+        "character_similarity": 0.87746
+      },
+      {
+        "theme_zh": "俯视乐师低头拢住胸前的小竹哨，浅袖在深蓝垫面上向外叠开",
+        "left_tag": "T158",
+        "right_tag": "T161",
+        "left_key": "ZR4-145-T03-V1",
+        "right_key": "ZR4-145-T03-V4",
+        "left_source": "BV1B4nV69EcY/s10",
+        "right_source": "BV1B4nV69EcY/s10",
+        "character_similarity": 0.87738
+      },
+      {
+        "theme_zh": "雨后刚开市的木楼长街，桥上空着，近檐垂一面窄红幌",
+        "left_tag": "T320",
+        "right_tag": "T323",
+        "left_key": "ZR2-Y03-T03-V1",
+        "right_key": "ZR2-Y03-T03-V4",
+        "left_source": "BV1b9eV6VEqW/s05",
+        "right_source": "BV1b9eV6VEqW/s05",
+        "character_similarity": 0.877187
+      },
+      {
+        "theme_zh": "青鳞长兽伏在礁湾左侧，雾遮住下颌，右岸仅见小塔",
+        "left_tag": "T195",
+        "right_tag": "T198",
+        "left_key": "ZR4-049-T01-V1",
+        "right_key": "ZR4-049-T01-V4",
+        "left_source": "BV1NiNQ6MEDq/s04",
+        "right_source": "BV1NiNQ6MEDq/s04",
+        "character_similarity": 0.877048
+      },
+      {
+        "theme_zh": "云上观台外，负剑旅人立于檐柱外侧看向远天",
+        "left_tag": "T131",
+        "right_tag": "T134",
+        "left_key": "ZR2-J02-T03-V1",
+        "right_key": "ZR2-J02-T03-V4",
+        "left_source": "BV1RJuc6DEgF/s00",
+        "right_source": "BV1RJuc6DEgF/s00",
+        "character_similarity": 0.877046
+      },
+      {
+        "theme_zh": "峡口石台上，一名小行者看向竖落的水线",
+        "left_tag": "T054",
+        "right_tag": "T057",
+        "left_key": "ZR2-C02-T02-V1",
+        "right_key": "ZR2-C02-T02-V4",
+        "left_source": "BV1XnuH66EFU/s03",
+        "right_source": "BV1XnuH66EFU/s03",
+        "character_similarity": 0.876459
+      },
+      {
+        "theme_zh": "楼外一簇卷瓣形亮纹浮起，卷线掠过空石台",
+        "left_tag": "T039",
+        "right_tag": "T042",
+        "left_key": "ZR4-087-T02-V1",
+        "right_key": "ZR4-087-T02-V4",
+        "left_source": "BV1RJuc6DEgF/s07",
+        "right_source": "BV1RJuc6DEgF/s07",
+        "character_similarity": 0.876439
+      },
+      {
+        "theme_zh": "高楼夹道的妖市，挑担人从连桥下经过",
+        "left_tag": "T261",
+        "right_tag": "T264",
+        "left_key": "ZR2-Y03-T01-V1",
+        "right_key": "ZR2-Y03-T01-V4",
+        "left_source": "BV1b9eV6VEqW/s05",
+        "right_source": "BV1b9eV6VEqW/s05",
+        "character_similarity": 0.876233
+      },
+      {
+        "theme_zh": "水道拐角空栏无客，远岸灯列在水面留下细碎边光",
+        "left_tag": "T109",
+        "right_tag": "T112",
+        "left_key": "ZR2-Y02-T02-V1",
+        "right_key": "ZR2-Y02-T02-V4",
+        "left_source": "BV1quYm67E14/s09",
+        "right_source": "BV1quYm67E14/s09",
+        "character_similarity": 0.875841
+      },
+      {
+        "theme_zh": "架桥木街，一辆放着纸灯的货车沿中间小路驶过",
+        "left_tag": "T068",
+        "right_tag": "T071",
+        "left_key": "ZR2-Y03-T02-V1",
+        "right_key": "ZR2-Y03-T02-V4",
+        "left_source": "BV1b9eV6VEqW/s05",
+        "right_source": "BV1b9eV6VEqW/s05",
+        "character_similarity": 0.875746
+      },
+      {
+        "theme_zh": "云台望见巨大的花形焰光，右檐下站一名小小的守灯人",
+        "left_tag": "T238",
+        "right_tag": "T241",
+        "left_key": "ZR4-087-T01-V1",
+        "right_key": "ZR4-087-T01-V4",
+        "left_source": "BV1RJuc6DEgF/s07",
+        "right_source": "BV1RJuc6DEgF/s07",
+        "character_similarity": 0.875738
+      },
+      {
+        "theme_zh": "夜宴结束，一只狸猫伏在近桌席上，远端有人收碗",
+        "left_tag": "T121",
+        "right_tag": "T124",
+        "left_key": "ZR3-A06-T01-V1",
+        "right_key": "ZR3-A06-T01-V4",
+        "left_source": "BV1b9eV6VEqW/s09",
+        "right_source": "BV1b9eV6VEqW/s09",
+        "character_similarity": 0.875613
+      },
+      {
+        "theme_zh": "雨歇后，一叶舟停在峡谷白瀑下",
+        "left_tag": "T341",
+        "right_tag": "T344",
+        "left_key": "ZR2-C02-T01-V1",
+        "right_key": "ZR2-C02-T01-V4",
+        "left_source": "BV1XnuH66EFU/s03",
+        "right_source": "BV1XnuH66EFU/s03",
+        "character_similarity": 0.875397
+      },
+      {
+        "theme_zh": "长须水兽从石峡侧面伸头，远处桥楼穿过低雾",
+        "left_tag": "T393",
+        "right_tag": "T396",
+        "left_key": "ZR4-049-T02-V1",
+        "right_key": "ZR4-049-T02-V4",
+        "left_source": "BV1NiNQ6MEDq/s04",
+        "right_source": "BV1NiNQ6MEDq/s04",
+        "character_similarity": 0.875223
+      },
+      {
+        "theme_zh": "空旷草坡上，成片长穗朝同侧低伏，远处仅有低日",
+        "left_tag": "T301",
+        "right_tag": "T304",
+        "left_key": "ZR2-C01-T02-V1",
+        "right_key": "ZR2-C01-T02-V4",
+        "left_source": "BV1NxbD68EYE/s00",
+        "right_source": "BV1NxbD68EYE/s00",
+        "character_similarity": 0.875164
+      },
+      {
+        "theme_zh": "夜河边，提灯客凝望水中央露出的暗影",
+        "left_tag": "T405",
+        "right_tag": "T408",
+        "left_key": "ZR2-Y02-T01-V1",
+        "right_key": "ZR2-Y02-T01-V4",
+        "left_source": "BV1quYm67E14/s09",
+        "right_source": "BV1quYm67E14/s09",
+        "character_similarity": 0.875115
+      },
+      {
+        "theme_zh": "夜市闭摊后，一只宽翼夜蛾挡住半排灯串，守摊人半身留在右下角",
+        "left_tag": "T249",
+        "right_tag": "T252",
+        "left_key": "ZR4-135-T03-V2",
+        "right_key": "ZR4-135-T03-V5",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.875046
+      },
+      {
+        "theme_zh": "一朵透亮的光花在山寺上空张开，细亮线折向右侧暗檐",
+        "left_tag": "T425",
+        "right_tag": "T428",
+        "left_key": "ZR4-087-T03-V1",
+        "right_key": "ZR4-087-T03-V4",
+        "left_source": "BV1RJuc6DEgF/s07",
+        "right_source": "BV1RJuc6DEgF/s07",
+        "character_similarity": 0.874979
+      },
+      {
+        "theme_zh": "守湾人蹲坐岸边，近鹤低头觅食，远处一只侧立",
+        "left_tag": "T163",
+        "right_tag": "T166",
+        "left_key": "ZR3-A09-T01-V1",
+        "right_key": "ZR3-A09-T01-V4",
+        "left_source": "BVZMFSTATIC0/s22",
+        "right_source": "BVZMFSTATIC0/s22",
+        "character_similarity": 0.874975
+      },
+      {
+        "theme_zh": "河船从暗水近处掠过，右岸一列小灯留出水道",
+        "left_tag": "T275",
+        "right_tag": "T278",
+        "left_key": "ZR2-Y02-T03-V1",
+        "right_key": "ZR2-Y02-T03-V4",
+        "left_source": "BV1quYm67E14/s09",
+        "right_source": "BV1quYm67E14/s09",
+        "character_similarity": 0.87491
+      },
+      {
+        "theme_zh": "巨石兽侧身堵在旧桥口，石阶旁留一名小守门人",
+        "left_tag": "T214",
+        "right_tag": "T217",
+        "left_key": "ZR2-Y01-T02-V1",
+        "right_key": "ZR2-Y01-T02-V4",
+        "left_source": "BV1NiNQ6MEDq/s02",
+        "right_source": "BV1NiNQ6MEDq/s02",
+        "character_similarity": 0.87467
+      },
+      {
+        "theme_zh": "空雪道夹在两崖之间，一线白雾通向云上城门",
+        "left_tag": "T389",
+        "right_tag": "T392",
+        "left_key": "ZR2-J05-T02-V1",
+        "right_key": "ZR2-J05-T02-V4",
+        "left_source": "BV1m4tA6bEbP/s22",
+        "right_source": "BV1m4tA6bEbP/s22",
+        "character_similarity": 0.874643
+      },
+      {
+        "theme_zh": "高处俯看无人河城，银光顺水湾转向，橙灯只在小码头成短倒影",
+        "left_tag": "T095",
+        "right_tag": "T098",
+        "left_key": "ZR4-141-T01-V1",
+        "right_key": "ZR4-141-T01-V4",
+        "left_source": "BV126aw6vEG6/s22",
+        "right_source": "BV126aw6vEG6/s22",
+        "character_similarity": 0.874599
+      },
+      {
+        "theme_zh": "幕布上投出单只抬翅鹤影，前方小人静看",
+        "left_tag": "T218",
+        "right_tag": "T221",
+        "left_key": "ZR3-A07-T01-V1",
+        "right_key": "ZR3-A07-T01-V4",
+        "left_source": "BVZMFSTATIC0/s12",
+        "right_source": "BVZMFSTATIC0/s12",
+        "character_similarity": 0.874321
+      },
+      {
+        "theme_zh": "厚重兽首探出门阴，远处庙檐只有冷雾和轮廓",
+        "left_tag": "T030",
+        "right_tag": "T033",
+        "left_key": "ZR2-Y01-T03-V1",
+        "right_key": "ZR2-Y01-T03-V4",
+        "left_source": "BV1NiNQ6MEDq/s02",
+        "right_source": "BV1NiNQ6MEDq/s02",
+        "character_similarity": 0.874258
+      },
+      {
+        "theme_zh": "绳上戏偶的影子落在垂幕上，底沿留出空石台",
+        "left_tag": "T063",
+        "right_tag": "T066",
+        "left_key": "ZR3-A07-T02-V1",
+        "right_key": "ZR3-A07-T02-V4",
+        "left_source": "BVZMFSTATIC0/s12",
+        "right_source": "BVZMFSTATIC0/s12",
+        "character_similarity": 0.874083
+      },
+      {
+        "theme_zh": "雪岭留有两行脚印，路尽处只见远阙的细金亮边",
+        "left_tag": "T117",
+        "right_tag": "T120",
+        "left_key": "ZR2-J05-T03-V1",
+        "right_key": "ZR2-J05-T03-V4",
+        "left_source": "BV1m4tA6bEbP/s22",
+        "right_source": "BV1m4tA6bEbP/s22",
+        "character_similarity": 0.874082
+      },
+      {
+        "theme_zh": "雨后两岸工坊隔谷亮出短檐，平台无人",
+        "left_tag": "T305",
+        "right_tag": "T308",
+        "left_key": "ZR3-A10-T03-V1",
+        "right_key": "ZR3-A10-T03-V4",
+        "left_source": "BVZMFSTATIC0/s16",
+        "right_source": "BVZMFSTATIC0/s16",
+        "character_similarity": 0.874047
+      },
+      {
+        "theme_zh": "数名负笈行者穿过雪脊，远方云阙露出檐脊",
+        "left_tag": "T205",
+        "right_tag": "T208",
+        "left_key": "ZR2-J05-T01-V1",
+        "right_key": "ZR2-J05-T01-V4",
+        "left_source": "BV1m4tA6bEbP/s22",
+        "right_source": "BV1m4tA6bEbP/s22",
+        "character_similarity": 0.874004
+      },
+      {
+        "theme_zh": "一只冷蓝鳞兽探向空谷，远侧崖庐小得只看见屋轮廓",
+        "left_tag": "T081",
+        "right_tag": "T084",
+        "left_key": "ZR4-049-T03-V1",
+        "right_key": "ZR4-049-T03-V4",
+        "left_source": "BV1NiNQ6MEDq/s04",
+        "right_source": "BV1NiNQ6MEDq/s04",
+        "character_similarity": 0.873645
+      },
+      {
+        "theme_zh": "空谷尽头一股白瀑下垂，瀑底扩散成低低的雾",
+        "left_tag": "T292",
+        "right_tag": "T295",
+        "left_key": "ZR2-C02-T03-V1",
+        "right_key": "ZR2-C02-T03-V4",
+        "left_source": "BV1XnuH66EFU/s03",
+        "right_source": "BV1XnuH66EFU/s03",
+        "character_similarity": 0.873531
+      },
+      {
+        "theme_zh": "牧人策马穿过低日下的长草原",
+        "left_tag": "T437",
+        "right_tag": "T440",
+        "left_key": "ZR2-C01-T01-V1",
+        "right_key": "ZR2-C01-T01-V4",
+        "left_source": "BV1NxbD68EYE/s00",
+        "right_source": "BV1NxbD68EYE/s00",
+        "character_similarity": 0.873223
+      },
+      {
+        "theme_zh": "长桌摆出渡口集会的粗陶杯，前椅空置",
+        "left_tag": "T381",
+        "right_tag": "T384",
+        "left_key": "ZR3-A06-T03-V1",
+        "right_key": "ZR3-A06-T03-V4",
+        "left_source": "BV1b9eV6VEqW/s09",
+        "right_source": "BV1b9eV6VEqW/s09",
+        "character_similarity": 0.873219
+      },
+      {
+        "theme_zh": "风灯将高架枝影投在旧帐幕上，近景无人物",
+        "left_tag": "T328",
+        "right_tag": "T331",
+        "left_key": "ZR3-A07-T03-V1",
+        "right_key": "ZR3-A07-T03-V4",
+        "left_source": "BVZMFSTATIC0/s12",
+        "right_source": "BVZMFSTATIC0/s12",
+        "character_similarity": 0.872941
+      },
+      {
+        "theme_zh": "黑袍测绘者停在雪崖边，坡底仅留几枝红褐灌木",
+        "left_tag": "T210",
+        "right_tag": "T211",
+        "left_key": "ZR4-063-T03-V2",
+        "right_key": "ZR4-063-T03-V3",
+        "left_source": "BV1NxbD68EYE/s17",
+        "right_source": "BV1NxbD68EYE/s17",
+        "character_similarity": 0.872928
+      },
+      {
+        "theme_zh": "旧桥上悬一盏大纸灯，来客只在画面低处经过",
+        "left_tag": "T191",
+        "right_tag": "T194",
+        "left_key": "ZR2-C03-T02-V1",
+        "right_key": "ZR2-C03-T02-V4",
+        "left_source": "BV1eAg96TEYs/s08",
+        "right_source": "BV1eAg96TEYs/s08",
+        "character_similarity": 0.872853
+      },
+      {
+        "theme_zh": "长吻巨鱼穿过翻起的浪脊，远处浮台若隐若现",
+        "left_tag": "T223",
+        "right_tag": "T226",
+        "left_key": "ZR4-010-T03-V1",
+        "right_key": "ZR4-010-T03-V4",
+        "left_source": "BV12Puz6LEAB/s18",
+        "right_source": "BV12Puz6LEAB/s18",
+        "character_similarity": 0.872721
+      },
+      {
+        "theme_zh": "长桌上留着祭礼果盏，两侧乐师让出中央通道",
+        "left_tag": "T233",
+        "right_tag": "T236",
+        "left_key": "ZR3-A06-T02-V1",
+        "right_key": "ZR3-A06-T02-V4",
+        "left_source": "BV1b9eV6VEqW/s09",
+        "right_source": "BV1b9eV6VEqW/s09",
+        "character_similarity": 0.872661
+      },
+      {
+        "theme_zh": "满月下老城的弯河经过一排稀疏灯亭，近处树冠压暗左缘",
+        "left_tag": "T417",
+        "right_tag": "T420",
+        "left_key": "ZR4-141-T02-V1",
+        "right_key": "ZR4-141-T02-V4",
+        "left_source": "BV126aw6vEG6/s22",
+        "right_source": "BV126aw6vEG6/s22",
+        "character_similarity": 0.872617
+      },
+      {
+        "theme_zh": "行旅人与马停在坡脊，衣边与近草一同朝远处斜去",
+        "left_tag": "T016",
+        "right_tag": "T019",
+        "left_key": "ZR2-C01-T03-V1",
+        "right_key": "ZR2-C01-T03-V4",
+        "left_source": "BV1NxbD68EYE/s00",
+        "right_source": "BV1NxbD68EYE/s00",
+        "character_similarity": 0.87236
+      },
+      {
+        "theme_zh": "古城阶口，一头披长鬃的异兽驻足",
+        "left_tag": "T369",
+        "right_tag": "T372",
+        "left_key": "ZR2-Y01-T01-V1",
+        "right_key": "ZR2-Y01-T01-V4",
+        "left_source": "BV1NiNQ6MEDq/s02",
+        "right_source": "BV1NiNQ6MEDq/s02",
+        "character_similarity": 0.872356
+      },
+      {
+        "theme_zh": "一大一小两只白鹭隔水错开，岸边无人",
+        "left_tag": "T345",
+        "right_tag": "T348",
+        "left_key": "ZR3-A09-T02-V1",
+        "right_key": "ZR3-A09-T02-V4",
+        "left_source": "BVZMFSTATIC0/s22",
+        "right_source": "BVZMFSTATIC0/s22",
+        "character_similarity": 0.872319
+      },
+      {
+        "theme_zh": "两名修伞匠对看桌上摊开的伞骨，右窗外是远街",
+        "left_tag": "T353",
+        "right_tag": "T356",
+        "left_key": "ZR4-021-T02-V1",
+        "right_key": "ZR4-021-T02-V4",
+        "left_source": "BV16uYb6vECt/s11",
+        "right_source": "BV16uYb6vECt/s11",
+        "character_similarity": 0.872142
+      },
+      {
+        "theme_zh": "靠栏的制伞人横托长伞骨，水纹在后方散开",
+        "left_tag": "T257",
+        "right_tag": "T260",
+        "left_key": "ZR2-C04-T02-V1",
+        "right_key": "ZR2-C04-T02-V4",
+        "left_source": "BV1iSN46HEy5/s02",
+        "right_source": "BV1iSN46HEy5/s02",
+        "character_similarity": 0.872058
+      },
+      {
+        "theme_zh": "黑袍测绘者停在雪崖边，坡底仅留几枝红褐灌木",
+        "left_tag": "T210",
+        "right_tag": "T213",
+        "left_key": "ZR4-063-T03-V2",
+        "right_key": "ZR4-063-T03-V5",
+        "left_source": "BV1NxbD68EYE/s17",
+        "right_source": "BV1NxbD68EYE/s17",
+        "character_similarity": 0.872008
+      },
+      {
+        "theme_zh": "空栏悬着一幅长巾，斜风让掠过栏面的边缘透光",
+        "left_tag": "T091",
+        "right_tag": "T094",
+        "left_key": "ZR2-J04-T03-V1",
+        "right_key": "ZR2-J04-T03-V4",
+        "left_source": "BV1m4tA6bEbP/s11",
+        "right_source": "BV1m4tA6bEbP/s11",
+        "character_similarity": 0.871746
+      },
+      {
+        "theme_zh": "云阁回廊，修幔人双手按住横吹的浅布末端",
+        "left_tag": "T187",
+        "right_tag": "T190",
+        "left_key": "ZR2-J04-T02-V1",
+        "right_key": "ZR2-J04-T02-V4",
+        "left_source": "BV1m4tA6bEbP/s11",
+        "right_source": "BV1m4tA6bEbP/s11",
+        "character_similarity": 0.871675
+      },
+      {
+        "theme_zh": "空戏台上方悬横向纸灯，下面留一排短暗台阶",
+        "left_tag": "T072",
+        "right_tag": "T075",
+        "left_key": "ZR2-C03-T03-V1",
+        "right_key": "ZR2-C03-T03-V4",
+        "left_source": "BV1eAg96TEYs/s08",
+        "right_source": "BV1eAg96TEYs/s08",
+        "character_similarity": 0.871591
+      },
+      {
+        "theme_zh": "海龟隆背冒出风浪，天边只露两座小礁塔",
+        "left_tag": "T058",
+        "right_tag": "T061",
+        "left_key": "ZR4-010-T02-V1",
+        "right_key": "ZR4-010-T02-V4",
+        "left_source": "BV12Puz6LEAB/s18",
+        "right_source": "BV12Puz6LEAB/s18",
+        "character_similarity": 0.87158
+      },
+      {
+        "theme_zh": "夜市中，两名归客仰望檐间的巨灯",
+        "left_tag": "T421",
+        "right_tag": "T424",
+        "left_key": "ZR2-C03-T01-V1",
+        "right_key": "ZR2-C03-T01-V4",
+        "left_source": "BV1eAg96TEYs/s08",
+        "right_source": "BV1eAg96TEYs/s08",
+        "character_similarity": 0.871386
+      },
+      {
+        "theme_zh": "夜市闭摊后，一只宽翼夜蛾挡住半排灯串，守摊人半身留在右下角",
+        "left_tag": "T248",
+        "right_tag": "T250",
+        "left_key": "ZR4-135-T03-V1",
+        "right_key": "ZR4-135-T03-V3",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.87124
+      },
+      {
+        "theme_zh": "空庭花岸夹着月下池面，廊灯倒影被水纹切碎",
+        "left_tag": "T283",
+        "right_tag": "T286",
+        "left_key": "ZR2-C06-T01-V1",
+        "right_key": "ZR2-C06-T01-V4",
+        "left_source": "BV12w8d65ELw/s04",
+        "right_source": "BV12w8d65ELw/s04",
+        "character_similarity": 0.87095
+      },
+      {
+        "theme_zh": "守檐人坐在柱脚晾一双湿鞋，左侧瓦坡通向清晨云谷",
+        "left_tag": "T265",
+        "right_tag": "T268",
+        "left_key": "ZR4-123-T01-V1",
+        "right_key": "ZR4-123-T01-V4",
+        "left_source": "BV1m4tA6bEbP/s07",
+        "right_source": "BV1m4tA6bEbP/s07",
+        "character_similarity": 0.870812
+      },
+      {
+        "theme_zh": "渔童半坐在石岸看水鸟理羽，远栈边留一只小鸟",
+        "left_tag": "T001",
+        "right_tag": "T004",
+        "left_key": "ZR3-A09-T03-V1",
+        "right_key": "ZR3-A09-T03-V4",
+        "left_source": "BVZMFSTATIC0/s22",
+        "right_source": "BVZMFSTATIC0/s22",
+        "character_similarity": 0.87078
+      },
+      {
+        "theme_zh": "俯视乐师低头拢住胸前的小竹哨，浅袖在深蓝垫面上向外叠开",
+        "left_tag": "T159",
+        "right_tag": "T162",
+        "left_key": "ZR4-145-T03-V2",
+        "right_key": "ZR4-145-T03-V5",
+        "left_source": "BV1B4nV69EcY/s10",
+        "right_source": "BV1B4nV69EcY/s10",
+        "character_similarity": 0.870626
+      },
+      {
+        "theme_zh": "临水窗前，一人低头调弦",
+        "left_tag": "T149",
+        "right_tag": "T152",
+        "left_key": "ZR2-C04-T01-V1",
+        "right_key": "ZR2-C04-T01-V4",
+        "left_source": "BV1iSN46HEy5/s02",
+        "right_source": "BV1iSN46HEy5/s02",
+        "character_similarity": 0.87062
+      },
+      {
+        "theme_zh": "一只冷蓝鳞兽探向空谷，远侧崖庐小得只看见屋轮廓",
+        "left_tag": "T082",
+        "right_tag": "T085",
+        "left_key": "ZR4-049-T03-V2",
+        "right_key": "ZR4-049-T03-V5",
+        "left_source": "BV1NiNQ6MEDq/s04",
+        "right_source": "BV1NiNQ6MEDq/s04",
+        "character_similarity": 0.870513
+      },
+      {
+        "theme_zh": "巨型彩翼掠过窄街，两道悬灯在翼面两边露出，右侧看灯人抬头",
+        "left_tag": "T337",
+        "right_tag": "T339",
+        "left_key": "ZR4-135-T02-V1",
+        "right_key": "ZR4-135-T02-V3",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.86992
+      },
+      {
+        "theme_zh": "水边回廊，一人双手试着扶住斜放的乌木长尺",
+        "left_tag": "T357",
+        "right_tag": "T360",
+        "left_key": "ZR2-C04-T03-V1",
+        "right_key": "ZR2-C04-T03-V4",
+        "left_source": "BV1iSN46HEy5/s02",
+        "right_source": "BV1iSN46HEy5/s02",
+        "character_similarity": 0.869862
+      },
+      {
+        "theme_zh": "有雾的旧园水榭入暮，池边落花在暗蓝水面边缘",
+        "left_tag": "T324",
+        "right_tag": "T327",
+        "left_key": "ZR2-C06-T02-V1",
+        "right_key": "ZR2-C06-T02-V4",
+        "left_source": "BV12w8d65ELw/s04",
+        "right_source": "BV12w8d65ELw/s04",
+        "character_similarity": 0.869819
+      },
+      {
+        "theme_zh": "三组采药人沿低雾谷地间距错开，中间一人停在隆起处",
+        "left_tag": "T228",
+        "right_tag": "T231",
+        "left_key": "ZR4-054-T01-V1",
+        "right_key": "ZR4-054-T01-V4",
+        "left_source": "BV1NxbD68EYE/s07",
+        "right_source": "BV1NxbD68EYE/s07",
+        "character_similarity": 0.869813
+      },
+      {
+        "theme_zh": "守湾人蹲坐岸边，近鹤低头觅食，远处一只侧立",
+        "left_tag": "T163",
+        "right_tag": "T165",
+        "left_key": "ZR3-A09-T01-V1",
+        "right_key": "ZR3-A09-T01-V3",
+        "left_source": "BVZMFSTATIC0/s22",
+        "right_source": "BVZMFSTATIC0/s22",
+        "character_similarity": 0.869806
+      },
+      {
+        "theme_zh": "钟师以包布木槌对准最低一枚悬钟",
+        "left_tag": "T385",
+        "right_tag": "T388",
+        "left_key": "ZR3-A05-T01-V1",
+        "right_key": "ZR3-A05-T01-V4",
+        "left_source": "BV1eAg96TEYs/s06",
+        "right_source": "BV1eAg96TEYs/s06",
+        "character_similarity": 0.869764
+      },
+      {
+        "theme_zh": "雨后无人庭院，树根间留下几块湿石",
+        "left_tag": "T086",
+        "right_tag": "T089",
+        "left_key": "ZR3-A02-T03-V1",
+        "right_key": "ZR3-A02-T03-V4",
+        "left_source": "BV1NxbD68EYE/s10",
+        "right_source": "BV1NxbD68EYE/s10",
+        "character_similarity": 0.869741
+      },
+      {
+        "theme_zh": "一只灰蓝巨蛾从灯市上方展开双翼，一名商贩立在右下摊边",
+        "left_tag": "T050",
+        "right_tag": "T053",
+        "left_key": "ZR4-135-T01-V2",
+        "right_key": "ZR4-135-T01-V5",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.869709
+      },
+      {
+        "theme_zh": "空药铺的屉墙前留一张斜案，两端搁着不同大小的陶瓶",
+        "left_tag": "T006",
+        "right_tag": "T009",
+        "left_key": "ZR4-021-T03-V1",
+        "right_key": "ZR4-021-T03-V4",
+        "left_source": "BV16uYb6vECt/s11",
+        "right_source": "BV16uYb6vECt/s11",
+        "character_similarity": 0.869486
+      },
+      {
+        "theme_zh": "一尾巨鲸跃过远离港口的涌浪",
+        "left_tag": "T349",
+        "right_tag": "T352",
+        "left_key": "ZR4-010-T01-V1",
+        "right_key": "ZR4-010-T01-V4",
+        "left_source": "BV12Puz6LEAB/s18",
+        "right_source": "BV12Puz6LEAB/s18",
+        "character_similarity": 0.869419
+      },
+      {
+        "theme_zh": "一只灰蓝巨蛾从灯市上方展开双翼，一名商贩立在右下摊边",
+        "left_tag": "T050",
+        "right_tag": "T052",
+        "left_key": "ZR4-135-T01-V2",
+        "right_key": "ZR4-135-T01-V4",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.869309
+      },
+      {
+        "theme_zh": "两名药师隔着斜案辨认两枚种子",
+        "left_tag": "T177",
+        "right_tag": "T180",
+        "left_key": "ZR4-021-T01-V1",
+        "right_key": "ZR4-021-T01-V4",
+        "left_source": "BV16uYb6vECt/s11",
+        "right_source": "BV16uYb6vECt/s11",
+        "character_similarity": 0.869286
+      },
+      {
+        "theme_zh": "货船泊在小桥外，桥头仅有一盏引灯",
+        "left_tag": "T243",
+        "right_tag": "T246",
+        "left_key": "ZR3-A03-T01-V1",
+        "right_key": "ZR3-A03-T01-V4",
+        "left_source": "BV1NxbD68EYE/s06",
+        "right_source": "BV1NxbD68EYE/s06",
+        "character_similarity": 0.869131
+      },
+      {
+        "theme_zh": "舞者在浅池中侧卧休息，长袖沿水纹展开",
+        "left_tag": "T361",
+        "right_tag": "T364",
+        "left_key": "ZR3-A08-T02-V1",
+        "right_key": "ZR3-A08-T02-V4",
+        "left_source": "BVZMFSTATIC0/s19",
+        "right_source": "BVZMFSTATIC0/s19",
+        "character_similarity": 0.8691
+      },
+      {
+        "theme_zh": "细雨后的池岸空无人物，远廊只留几盏稀疏的金灯",
+        "left_tag": "T113",
+        "right_tag": "T116",
+        "left_key": "ZR2-C06-T03-V1",
+        "right_key": "ZR2-C06-T03-V4",
+        "left_source": "BV12w8d65ELw/s04",
+        "right_source": "BV12w8d65ELw/s04",
+        "character_similarity": 0.868983
+      },
+      {
+        "theme_zh": "旅人分坐在树根两侧歇脚",
+        "left_tag": "T172",
+        "right_tag": "T175",
+        "left_key": "ZR3-A02-T01-V1",
+        "right_key": "ZR3-A02-T01-V4",
+        "left_source": "BV1NxbD68EYE/s10",
+        "right_source": "BV1NxbD68EYE/s10",
+        "character_similarity": 0.868927
+      },
+      {
+        "theme_zh": "幕布上投出单只抬翅鹤影，前方小人静看",
+        "left_tag": "T218",
+        "right_tag": "T220",
+        "left_key": "ZR3-A07-T01-V1",
+        "right_key": "ZR3-A07-T01-V3",
+        "left_source": "BVZMFSTATIC0/s12",
+        "right_source": "BVZMFSTATIC0/s12",
+        "character_similarity": 0.868873
+      },
+      {
+        "theme_zh": "云台外，一人收起迎风的长巾",
+        "left_tag": "T413",
+        "right_tag": "T416",
+        "left_key": "ZR2-J04-T01-V1",
+        "right_key": "ZR2-J04-T01-V4",
+        "left_source": "BV1m4tA6bEbP/s11",
+        "right_source": "BV1m4tA6bEbP/s11",
+        "character_similarity": 0.868787
+      },
+      {
+        "theme_zh": "一队驮包旅人离开峡谷阴面，最远的人被雾化掉半身",
+        "left_tag": "T034",
+        "right_tag": "T037",
+        "left_key": "ZR4-054-T02-V1",
+        "right_key": "ZR4-054-T02-V4",
+        "left_source": "BV1NxbD68EYE/s07",
+        "right_source": "BV1NxbD68EYE/s07",
+        "character_similarity": 0.86871
+      },
+      {
+        "theme_zh": "舞者停在布环中央，手边白绢和外圈朱绛分层",
+        "left_tag": "T140",
+        "right_tag": "T142",
+        "left_key": "ZR2-J06-T03-V1",
+        "right_key": "ZR2-J06-T03-V3",
+        "left_source": "BV1WStR6vEca/s00",
+        "right_source": "BV1WStR6vEca/s00",
+        "character_similarity": 0.868651
+      },
+      {
+        "theme_zh": "山村孩子在树下摆开纸鸢骨架",
+        "left_tag": "T373",
+        "right_tag": "T376",
+        "left_key": "ZR3-A02-T02-V1",
+        "right_key": "ZR3-A02-T02-V4",
+        "left_source": "BV1NxbD68EYE/s10",
+        "right_source": "BV1NxbD68EYE/s10",
+        "character_similarity": 0.868623
+      },
+      {
+        "theme_zh": "巨型彩翼掠过窄街，两道悬灯在翼面两边露出，右侧看灯人抬头",
+        "left_tag": "T338",
+        "right_tag": "T340",
+        "left_key": "ZR4-135-T02-V2",
+        "right_key": "ZR4-135-T02-V4",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.868483
+      },
+      {
+        "theme_zh": "夜廊尽头，云中白色异兽掠过远台",
+        "left_tag": "T279",
+        "right_tag": "T281",
+        "left_key": "ZR2-J03-T01-V1",
+        "right_key": "ZR2-J03-T01-V3",
+        "left_source": "BV1WStR6vEca/s08",
+        "right_source": "BV1WStR6vEca/s08",
+        "character_similarity": 0.868465
+      },
+      {
+        "theme_zh": "清晨空平台望对岸横跨峡谷的连廊",
+        "left_tag": "T044",
+        "right_tag": "T046",
+        "left_key": "ZR3-A10-T01-V1",
+        "right_key": "ZR3-A10-T01-V3",
+        "left_source": "BVZMFSTATIC0/s16",
+        "right_source": "BVZMFSTATIC0/s16",
+        "character_similarity": 0.868461
+      },
+      {
+        "theme_zh": "夜市闭摊后，一只宽翼夜蛾挡住半排灯串，守摊人半身留在右下角",
+        "left_tag": "T249",
+        "right_tag": "T250",
+        "left_key": "ZR4-135-T03-V2",
+        "right_key": "ZR4-135-T03-V3",
+        "left_source": "BV1quYm67E14/s07",
+        "right_source": "BV1quYm67E14/s07",
+        "character_similarity": 0.868445
+      },
+      {
+        "theme_zh": "铜铃匠贴近检看一串不同尺寸的吊铃",
+        "left_tag": "T270",
+        "right_tag": "T273",
+        "left_key": "ZR3-A05-T02-V1",
+        "right_key": "ZR3-A05-T02-V4",
+        "left_source": "BV1eAg96TEYs/s06",
+        "right_source": "BV1eAg96TEYs/s06",
+        "character_similarity": 0.868357
+      }
+    ]
+  },
+  "prompt_length_characters": {
+    "min": 2443,
+    "median": 2707.0,
+    "max": 2998
+  },
+  "selection_labels_present": false,
+  "interpretation_limit": "This audit measures prompt reuse only. It does not prove visual duplication, scenery-only output, or why any individual image was rejected."
+}
