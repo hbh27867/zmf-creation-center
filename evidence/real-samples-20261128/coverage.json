@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-11-28T04:59:06+08:00",
+  "record_unit": "one MOSS output image",
+  "record_count": 50,
+  "preview_count": 50,
+  "source_population": {
+    "path": "tujian_moss_199_20261124",
+    "ledger_records": 199,
+    "vision_records": 199,
+    "verdict_counts": {
+      "pass": 170,
+      "near_reject": 29
+    },
+    "score_counts": {
+      "8": 168,
+      "7": 31
+    },
+    "series_counts": {
+      "九霄神游": 86,
+      "妖都浮生": 32,
+      "尘世长卷": 52,
+      "灵动仙姿": 7,
+      "壁纸级图片": 22
+    },
+    "unique_bvids": 21
+  },
+  "sampling": {
+    "strategy": "all near_reject records plus pass records evenly spaced across the original ordered population",
+    "source_population": 199,
+    "source_pass": 170,
+    "source_near_reject": 29,
+    "sample_pass": 21,
+    "sample_near_reject": 29,
+    "sample_total": 50,
+    "rate_estimation_warning": "Failure-enriched sample; do not use this pack to estimate the population acceptance rate."
+  },
+  "sample_verdict_counts": {
+    "pass": 21,
+    "near_reject": 29
+  },
+  "sample_series_counts": {
+    "九霄神游": 24,
+    "妖都浮生": 6,
+    "尘世长卷": 15,
+    "灵动仙姿": 2,
+    "壁纸级图片": 3
+  },
+  "missing_field_counts": {
+    "style_id": 50,
+    "color_id": 50,
+    "layout_id": 50,
+    "recipe_id": 50
+  },
+  "reviewer": {
+    "type": "automatic_vision",
+    "backend": "current_assistant_vision",
+    "rubric": "hard_constraints_v2",
+    "note": "These are automatic visual-acceptance verdicts, not human final gallery selections."
+  },
+  "user_supplied_root_cause_observation": {
+    "text": "淘汰理由：一个主题，扩写好几份提示词，重复的很多或者全是不重要的风景，重复的很多",
+    "scope": "General human observation supplied with this export; not a per-record label and not automatically assigned to individual records.",
+    "supplemental_daily440_audit": "supplemental_daily440/prompt_reuse_audit.json"
+  },
+  "supplemental_daily440": {
+    "catalog_records": 440,
+    "unique_theme_zh": 99,
+    "unique_source_assets": 33,
+    "exact_normalized_duplicate_groups": 0,
+    "within_theme_pairs": 770,
+    "within_theme_median_character_similarity": 0.83108,
+    "pairs_at_least_0_85": 313,
+    "selection_labels_present": false
+  },
+  "limitations": [
+    "This 50-record pack is failure-enriched and cannot estimate the population acceptance rate.",
+    "The source population has 170 pass and 29 near_reject automatic verdicts; this pack includes all 29 near_reject and 21 evenly spaced pass records.",
+    "Style/color/layout/recipe IDs are absent from the source ledger and remain null.",
+    "Automatic near_reject is not the same as final human rejection; use it as evidence for root-cause analysis, not as a final gallery label.",
+    "The 440-group 2026-11-27 daily batch is not included as selected/rejected evidence because no visual shortlist was found for it.",
+    "The user-supplied duplication/scenery observation is stored separately because the source records do not contain a per-record duplication label."
+  ],
+  "source_files": [
+    {
+      "file": "source_records/ledger.json",
+      "sha256": "6af053b1226c8788cef2a6c337db4fee73b30269c2ba0a59a5caf0ed855fe089",
+      "bytes": 495800
+    },
+    {
+      "file": "source_records/auto_vision.json",
+      "sha256": "47349e7f32df18cede78a102da6250a041cf062dfd82efa08fc3b41c3db218af",
+      "bytes": 188091
+    },
+    {
+      "file": "source_records/catalog.json",
+      "sha256": "1cc44a30adec21a1078eaa19097f5ba09f4feb9ec2ec78a981e924cd67894400",
+      "bytes": 349388
+    },
+    {
+      "file": "source_records/run_moss_batch.py",
+      "sha256": "8ca1dced95f185a58c9ab201c82533bd6cf24e579c7fd5c3793d9a18c824f046",
+      "bytes": 12070
+    },
+    {
+      "file": "source_records/auto_accept.py",
+      "sha256": "959def5b73ebb94bf82b5cd42fa885414b0e5638c30910db0fe50824aed61534",
+      "bytes": 6853
+    },
+    {
+      "file": "source_records/api_graph_moss.json",
+      "sha256": "3653b44c22f6368996febcbf3a66752e7f799a1a5f275150aa4a9f13348da74f",
+      "bytes": 6440
+    }
+  ]
+}

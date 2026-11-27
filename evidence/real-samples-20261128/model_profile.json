@@ -1,0 +1,41 @@
+{
+  "model_mode": "MOSS",
+  "label": "MOSS Base + SFT, two LoRAs",
+  "base_model": "moss_image_base_int8_convrot.safetensors",
+  "sft_model": "moss_image_sft_int8_convrot.safetensors",
+  "merge_preset": "Balanced",
+  "merge_strength": 1,
+  "lora_chain": [
+    {
+      "name": "moss\\feverdream-epoch-07.safetensors",
+      "strength": 0.5
+    },
+    {
+      "name": "moss\\TJFilmMoss_V1.safetensors",
+      "strength": 0.7000000000000002
+    }
+  ],
+  "text_encoder": "qwen3.5_9b_int8_convrot.safetensors",
+  "vae": "flux2-vae.safetensors",
+  "sampler": "euler",
+  "scheduler": "simple",
+  "steps": 35,
+  "cfg": 2.5,
+  "denoise": 1,
+  "seed_source": "per-record seed injected into node 16",
+  "negative_prompt": "2D anime, cel shading, cartoon face, oversized anime eyes, thick outlines, flat shading, exaggerated facial proportions, mature woman, sharp jawline, prominent cheekbones, heavy makeup, doll-like plastic skin, waxy skin, rigid hair clumps, artificial hair strands, excessive sharpness, harsh contrast, oversaturated colors, flat lighting, cluttered background, multiple characters, text, watermark",
+  "text_to_image": true,
+  "reference_image_used": false,
+  "resolution_selector": {
+    "aspect_ratio": "16:9 (Widescreen)",
+    "megapixels": 1.0,
+    "multiple": 16
+  },
+  "evidence": {
+    "graph": "source_records/api_graph_moss.json",
+    "graph_sha256": "3653b44c22f6368996febcbf3a66752e7f799a1a5f275150aa4a9f13348da74f",
+    "graph_mtime": "2026-11-19T07:50:17+00:00",
+    "injection_code": "zmf-backend/server.py:1293-1301; source_records/run_moss_batch.py:183-200",
+    "limitation": "The ledger stores prompt_id and output hash but not a graph hash; the template mtime predates the 2026-11-24 run."
+  }
+}
